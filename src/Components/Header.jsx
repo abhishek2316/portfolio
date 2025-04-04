@@ -12,17 +12,25 @@ function Header() {
   return (
     <header className="w-full ">
       <nav className="container mx-auto flex items-center justify-between p-4">
-        <a href="/" className="text-gray-300 font-semibold text-xl uppercase hover:text-white">
+        <Link to="/" className="text-gray-300 font-semibold text-xl uppercase hover:text-white">
           Abhishek Kumar
-        </a>
+        </Link>
 
         {/* Desktop Navigation */}
         <div className="hidden md:flex items-center gap-6">
           <a href="/#work-experience" onClick={scrollToExperience} className="text-gray-300 hover:text-white">
             Work Experience
           </a>
-          <a href="/#projects" className="text-gray-300 hover:text-white">
+          <Link to="/projects" className="text-gray-300 hover:text-white">
             Projects
+          </Link>
+          <a 
+            href="/src/assets/pdf/Abhishek_kumar.pdf" 
+            target="_blank" 
+            rel="noopener noreferrer" 
+            className="text-gray-300 hover:text-white"
+          >
+            Resume
           </a>
           <a href="/#contact" className="text-gray-300 hover:text-white">
             Contact
@@ -44,8 +52,16 @@ function Header() {
           <a href="/#work-experience" className="text-gray-300 hover:text-white">
             Work Experience
           </a>
-          <a href="/#projects" className="text-gray-300 hover:text-white">
+          <Link to="/projects" className="text-gray-300 hover:text-white" onClick={() => setIsOpen(false)}>
             Projects
+          </Link>
+          <a 
+            href="/src/assets/pdf/Abhishek_kumar.pdf" 
+            target="_blank" 
+            rel="noopener noreferrer" 
+            className="text-gray-300 hover:text-white"
+          >
+            Resume
           </a>
           <a href="/#contact" className="text-gray-300 hover:text-white">
             Contact
