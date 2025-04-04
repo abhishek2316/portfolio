@@ -20,12 +20,10 @@ function HomePage() {
 function App() {
   return (
     <div className='bg-[#0c0f11] min-h-screen'>
-      <Router>
         <Routes>
           <Route path="/" element={<HomePage />} />
           <Route path="/projects" element={<UnderConstruction />} />
         </Routes>
-      </Router>
     </div>
   )
 }
