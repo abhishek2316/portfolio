@@ -2,8 +2,11 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { Menu, X } from "lucide-react";
 
+import resume from '../assets/pdf/Abhishek_kumar.pdf'
+
 function Header() {
   const [isOpen, setIsOpen] = useState(false);
+  
 
   const scrollToExperience = () => {
     document.getElementById("experience")?.scrollIntoView({ behavior: "smooth" });
@@ -18,21 +21,21 @@ function Header() {
 
         {/* Desktop Navigation */}
         <div className="hidden md:flex items-center gap-6">
-          <a href="/#work-experience" onClick={scrollToExperience} className="text-gray-300 hover:text-white">
+          <a href="#experience" onClick={scrollToExperience} className="text-gray-300 hover:text-white">
             Work Experience
           </a>
           <Link to="/projects" className="text-gray-300 hover:text-white">
             Projects
           </Link>
           <a 
-            href="/src/assets/pdf/Abhishek_kumar.pdf" 
+            href={resume}
             target="_blank" 
             rel="noopener noreferrer" 
             className="text-gray-300 hover:text-white"
           >
             Resume
           </a>
-          <a href="/#contact" className="text-gray-300 hover:text-white">
+          <a href="#contact" className="text-gray-300 hover:text-white">
             Contact
           </a>
         </div>
@@ -49,21 +52,21 @@ function Header() {
       {/* Mobile Navigation */}
       {isOpen && (
         <div className="md:hidden flex flex-col items-center gap-4 pb-4">
-          <a href="/#work-experience" className="text-gray-300 hover:text-white">
+          <a href="#experience" className="text-gray-300 hover:text-white">
             Work Experience
           </a>
           <Link to="/projects" className="text-gray-300 hover:text-white" onClick={() => setIsOpen(false)}>
             Projects
           </Link>
           <a 
-            href="/src/assets/pdf/Abhishek_kumar.pdf" 
+            href={resume}
             target="_blank" 
             rel="noopener noreferrer" 
             className="text-gray-300 hover:text-white"
           >
             Resume
           </a>
-          <a href="/#contact" className="text-gray-300 hover:text-white">
+          <a href="#contact" className="text-gray-300 hover:text-white">
             Contact
           </a>
         </div>

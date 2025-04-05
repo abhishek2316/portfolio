@@ -1,11 +1,12 @@
 import React from "react";
+import construction from '../assets/images/under-construction.png'
 
 function UnderConstruction() {
   return (
     <div className="flex flex-col items-center justify-center min-h-screen bg-[#0c0f11] text-gray-300 p-6">
       <div className="max-w-2xl text-center">
         <img
-          src="/src/assets/images/under-construction.png"  // Update this path to your actual image location
+          src={construction}  // Update this path to your actual image location
           alt="Under Construction"
           className="mx-auto w-64 h-64 object-contain mb-6"
         />
