@@ -1,6 +1,45 @@
 @import "tailwindcss";
 
-body {
+/* @theme {
+    --color-background: #red;
+    --color-text: #ffffff;
+  
+} */
+
+/* body {
     background-color: #0c0f11;
-    color: #ffffff; /* Optional: Ensures text is visible */
+    color: #ffffff; 
+} */
+
+
+
+@import "tailwindcss";
+
+@theme {
+  /* Your custom theme values go here if needed */
 }
+
+/* Add background to html and body elements */
+html,
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  min-height: 100vh;
+}
+
+body {
+  background-color: #ffffff;
+  transition: background-color 0.3s ease;
+}
+
+body:has(.dark) {
+  background-color: #0c0f11;
+}
+
+/* Or if the above doesn't work, use this alternative: */
+html.dark body {
+  background-color: #0c0f11;
+}
+
+@variant dark (&:where(.dark, .dark *));

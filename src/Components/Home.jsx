@@ -21,7 +21,7 @@ import linuxImg from '../assets/svg/linux.svg';
 
 function Main() {
   return (
-    <section className="flex flex-col items-center gap-10 p-10 text-gray-300">
+    <section className="flex flex-col items-center gap-10 p-10 text-gray-500 dark:text-gray-300">
       <div className="flex flex-col md:flex-row items-center justify-center gap-10 md:gap-16">
         <div className="w-40 h-40 md:w-52 md:h-52 rounded-full border-4 border-gradient bg-black p-1">
           <img
@@ -34,7 +34,7 @@ function Main() {
         
         <div className="text-center md:text-left">
           <h1 className="text-3xl md:text-4xl font-bold">
-            Hey, I'm <span className="text-white">Abhishek</span>
+            Hey, I'm <span className="text-black dark:text-white">Abhishek</span>
           </h1>
           <h2 className="text-xl md:text-2xl font-semibold mt-2">
             I'm a Software Engineer.
