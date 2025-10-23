@@ -3,7 +3,8 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import Experience from './Components/Experience'
 import Header from './Components/Header'
 import Home from './Components/Home'
-import UnderConstruction from './Components/UnderConstruction'
+// import UnderConstruction from './Components/UnderConstruction'
+import Projects from './Components/Projects'
 import Contact from './Components/Contact'
 
 function HomePage() {
@@ -22,7 +23,8 @@ function App() {
     <div className="bg-white dark:bg-[#0c0f11] min-h-screen text-gray-900 dark:text-gray-100">
         <Routes>
           <Route path="/" element={<HomePage />} />
-          <Route path="/projects" element={<UnderConstruction />} />
+          {/* <Route path="/projects" element={<UnderConstruction />} /> */}
+          <Route path="/projects" element={<Projects />} />
         </Routes>
     </div>
   )
