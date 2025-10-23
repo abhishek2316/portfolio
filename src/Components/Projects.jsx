@@ -7,30 +7,30 @@ const PROJECTS = [
   {
     id: 1,
     title: "Email - Ext",
-    description: "A browser-based email extension that interacts with a Spring Boot backend powered by the Gemini API to enhance email functionality and productivity.",
+    description: "A browser email extension that connects to a Spring Boot backend using the Gemini API for enhanced email features.",
     image: project1,
     technologies: ["Gemini API", "Spring Boot", "JavaScript", "React"],
     githubLink: "https://github.com/abhishek2316/email-ext",
-    // liveLink: "https://email-ext-demo.com" // Uncomment when deployed
+    // liveLink: "https://email-ext-demo.com" 
   },
-//   {
-//     id: 2,
-//     title: "Project Name 2",
-//     description: "Another exciting project showcasing your skills. Describe the key features and your role in the development process.",
-//     image: "https://via.placeholder.com/600x400/1a1f26/ffffff?text=Project+2",
-//     technologies: ["TypeScript", "Next.js", "Tailwind"],
-//     githubLink: "https://github.com/yourusername/project2",
-//     liveLink: "https://project2-demo.com"
-//   },
-//   {
-//     id: 3,
-//     title: "Project Name 3",
-//     description: "This project demonstrates advanced concepts and problem-solving abilities. Highlight unique challenges overcome.",
-//     image: "https://via.placeholder.com/600x400/1a1f26/ffffff?text=Project+3",
-//     technologies: ["Python", "Flask", "PostgreSQL"],
-//     githubLink: "https://github.com/yourusername/project3",
-//     liveLink: "https://project3-demo.com"
-//   }
+  {
+    id: 2,
+    title: "git-complexity-analyzer",
+    description: "A tool to analyze the complexity of Git repositories.",
+    image: "https://via.placeholder.com/600x400/1a1f26/ffffff?text=Project+2",
+    technologies: ["Spring Boot", "React", "Tailwind"],
+    githubLink: "https://github.com/abhishek2316/git-complexity-analyzer",
+    // liveLink: "https://project2-demo.com"
+  },
+  {
+    id: 3,
+    title: "code-complexity-calculator",
+    description: "A web application that calculates code complexity metrics for various programming languages.",
+    image: "https://via.placeholder.com/600x400/1a1f26/ffffff?text=Project+3",
+    technologies: ["TypeScript"],
+    githubLink: "https://github.com/abhishek2316/code-complexity-calculator",
+    // liveLink: "https://project3-demo.com"
+  }
 ];
 
 
