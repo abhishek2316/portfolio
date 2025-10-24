@@ -2,6 +2,7 @@ import React from 'react';
 import { FaGithub, FaExternalLinkAlt } from 'react-icons/fa';
 import Header from './Header';
 import project1 from '../assets/images/demo.jpg';
+import { Link } from "react-router-dom";
 
 const PROJECTS = [
   {
@@ -155,12 +156,12 @@ const Projects = () => {
 
           {/* Back to Home Button */}
           <footer className="text-center">
-            <a
-              href="/"
+            <Link
+              to="/"
               className="inline-block px-6 py-3 bg-gray-800 dark:bg-gray-700 text-white rounded-md hover:bg-gray-900 dark:hover:bg-gray-600 transition-colors duration-200"
             >
               ← Back to Home
-            </a>
+            </Link>
           </footer>
           
         </div>
