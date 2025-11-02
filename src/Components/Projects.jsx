@@ -2,6 +2,8 @@ import React from 'react';
 import { FaGithub, FaExternalLinkAlt } from 'react-icons/fa';
 import Header from './Header';
 import project1 from '../assets/images/demo.jpg';
+import project2 from '../assets/images/java-debug.gif';
+import project3 from '../assets/images/timecomplexity.png';
 import { Link } from "react-router-dom";
 
 const PROJECTS = [
@@ -18,7 +20,8 @@ const PROJECTS = [
     id: 2,
     title: "git-complexity-analyzer",
     description: "A tool to analyze the complexity of Git repositories.",
-    image: "https://via.placeholder.com/600x400/1a1f26/ffffff?text=Project+2",
+    image: project2,
+    // image: "https://via.placeholder.com/600x400/1a1f26/ffffff?text=Project+2",
     technologies: ["Spring Boot", "React", "Tailwind"],
     githubLink: "https://github.com/abhishek2316/git-complexity-analyzer",
     // liveLink: "https://project2-demo.com"
@@ -27,7 +30,8 @@ const PROJECTS = [
     id: 3,
     title: "code-complexity-calculator",
     description: "A web application that calculates code complexity metrics for various programming languages.",
-    image: "https://via.placeholder.com/600x400/1a1f26/ffffff?text=Project+3",
+    image: project3,
+    // image: "https://via.placeholder.com/600x400/1a1f26/ffffff?text=Project+3",
     technologies: ["TypeScript"],
     githubLink: "https://github.com/abhishek2316/code-complexity-calculator",
     // liveLink: "https://project3-demo.com"

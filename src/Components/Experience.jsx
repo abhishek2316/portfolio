@@ -9,7 +9,7 @@ function Experience() {
       company: "Inflibnet Centre",
       location: "India",
       period: "2023 - Present",
-      duration: "1.5 years",
+      duration: "2 years",
       description: "Working on enterprise-level applications and analytical solutions for managing INFLIBNET services.",
       achievements: [
         "Developed an analytical dashboard using Flask to visualize and monitor key metrics",
