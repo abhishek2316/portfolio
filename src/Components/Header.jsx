@@ -32,6 +32,12 @@ function Header() {
             Projects
           </Link>
           <a
+            href="#experience"
+            className="text-gray-700 dark:text-gray-300 hover:text-black dark:hover:text-white"
+          >
+            Experience
+          </a>
+          <a
             href={resume}
             target="_blank"
             rel="noopener noreferrer"
@@ -39,12 +45,12 @@ function Header() {
           >
             Resume
           </a>
-          <a
-            href="#contact"
+          <Link
+            to="/contact"
             className="text-gray-700 dark:text-gray-300 hover:text-black dark:hover:text-white"
           >
             Contact
-          </a>
+          </Link>
 
           {/* Dark Mode Toggle */}
           <button
@@ -74,6 +80,12 @@ function Header() {
           >
             Projects
           </Link>
+          <a
+            href="#experience"
+            className="text-gray-700 dark:text-gray-300 hover:text-black dark:hover:text-white"
+          >
+            Experience
+          </a>
           <a
             href={resume}
             target="_blank"

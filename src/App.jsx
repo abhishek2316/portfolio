@@ -13,7 +13,7 @@ function HomePage() {
       <Header />
       <Home />
       <Experience />
-      <Contact />
+      {/* <Contact /> */}
     </>
   )
 }
@@ -24,7 +24,9 @@ function App() {
         <Routes>
           <Route path="/" element={<HomePage />} />
           {/* <Route path="/projects" element={<UnderConstruction />} /> */}
+          <Route path="/experience" element={<Experience />} />
           <Route path="/projects" element={<Projects />} />
+          <Route path="/contact" element={<Contact />} />
         </Routes>
     </div>
   )
