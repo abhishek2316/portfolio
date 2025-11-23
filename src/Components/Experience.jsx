@@ -1,5 +1,6 @@
 import React from "react";
 import { Briefcase, Calendar, MapPin } from "lucide-react";
+import Header from "./Header";
 
 function Experience() {
   const experiences = [
@@ -22,7 +23,10 @@ function Experience() {
 
   return (
     // <section className="flex flex-col w-full px-4 sm:px-8 lg:px-16 py-16 bg-gray-50 dark:bg-transparent">
-      <div className="max-w-6xl mx-auto w-full" id="experience">
+    <>
+      <Header />
+      
+      <div className="max-w-6xl mx-auto w-full pt-24 px-4 sm:px-8" id="experience">
         {/* Section Header */}
         <div className="mb-12">
           <div className="flex items-center gap-3 mb-3">
@@ -117,6 +121,7 @@ function Experience() {
           ))}
         </div>
       </div>
+    </>
     // </section>
   );
 }

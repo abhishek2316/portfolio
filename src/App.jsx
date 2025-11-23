@@ -12,7 +12,7 @@ function HomePage() {
     <>
       <Header />
       <Home />
-      <Experience />
+      {/* <Experience /> */}
       {/* <Contact /> */}
     </>
   )

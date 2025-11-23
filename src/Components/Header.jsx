@@ -31,12 +31,18 @@ function Header() {
           >
             Projects
           </Link>
-          <a
+          <Link
+            to="/experience"
+            className="text-gray-700 dark:text-gray-300 hover:text-black dark:hover:text-white"
+          >
+            Experience
+          </Link>
+          {/* <a
             href="#experience"
             className="text-gray-700 dark:text-gray-300 hover:text-black dark:hover:text-white"
           >
             Experience
-          </a>
+          </a> */}
           <a
             href={resume}
             target="_blank"
